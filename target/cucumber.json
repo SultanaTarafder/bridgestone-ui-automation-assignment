@@ -1,0 +1,125 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4980418500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to \"https://www.bridgestonetire.com/size/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.bridgestonetire.com/size/",
+                  "offset": 19
+                }
+              ],
+              "location": "TiresPageStepDefs.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1940204300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.launchBrowser(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Capture Tire count details in CSV for different diameters",
+        "description": "",
+        "id": "capture-tire-count-details;capture-tire-count-details-in-csv-for-different-diameters",
+        "after": [
+          {
+            "result": {
+              "duration": 564924900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.destoryDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24937700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User captures available wheel size diameters",
+            "match": {
+              "location": "TiresPageStepDefs.userCapturesAvailableWheelSizeDiameters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 598238779800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User captures Tire Size,Tire Count, URL for every diameter",
+            "match": {
+              "location": "TiresPageStepDefs.userCapturesTireSizeTireCountURLForEveryDiameter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81809000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User writes captured data into CSV file",
+            "match": {
+              "location": "TiresPageStepDefs.userWritesCapturedDataIntoCSVFile()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TireSize"
+          },
+          {
+            "name": "@CaptureTireDetails"
+          }
+        ]
+      }
+    ],
+    "name": "Capture Tire Count details",
+    "description": "",
+    "id": "capture-tire-count-details",
+    "keyword": "Feature",
+    "uri": "features/ui/TireSize.feature",
+    "tags": [
+      {
+        "name": "@TireSize",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
